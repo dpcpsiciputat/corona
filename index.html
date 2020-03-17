@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DPD PSI Tangerang Selatan - Corona</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script defer src="assets/covid19.js"></script>
+    <script defer src="assets/filter.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Penyebaran Corona (Covid-19)</h1>
+            <p class="lead">Berikut Data Penyebaran Corona (Covid-19) Di Setiap Negara</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-lg-2">
+                <h4>Negara</h4>
+            </div>
+            <div class="col col-md-auto">
+                <input class="form-control" type="text" id="dev-table-filter" placeholder="Filter Negara"
+                    onchange="myFilter()" />
+            </div>
+        </div>
+        </br>
+        <div class="table-responsive-md">
+            <table class="table table-striped table-bordered" id="dev-table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Negara</th>
+                        <th scope="col">Provinsi</th>
+                        <th scope="col">Positif</th>
+                        <th scope="col">Sembuh</th>
+                        <th scope="col">Meninggal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <span class="badge badge-info">API By Mathdroid</span>
+</body>
+
+</html>
